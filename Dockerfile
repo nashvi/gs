@@ -1,4 +1,4 @@
-FROM alpine
+FROM debian:10-slim
 
 ENV HOME=/root
 ENV GOROOT=/opt/go GOPATH=${HOME}/go GO_VERSION=1.13.1
