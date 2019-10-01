@@ -7,8 +7,7 @@ RUN set -ex \
   ; cd /opt \
   ; wget -q -O- https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz \
       | tar xzf - \
-  ; go get -u -v \
-      go get -u -v github.com/shadowsocks/go-shadowsocks2 \
+  ; go get -u -v github.com/shadowsocks/go-shadowsocks2 \
   ; rm -rf $(go env GOCACHE)/*
 
 FROM debian:10-slim
