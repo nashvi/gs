@@ -1,11 +1,3 @@
-img:
-    docker run \
-        -p 1080:1080 \
-        -d --restart=always \
-        --name gs \
-        nashv1/gs \
-        -cu "ss://${method}:${password}@${host}"
-
 v2ray:
     docker run \
         -p 1081:1080 \
@@ -14,3 +6,10 @@ v2ray:
         --name=v2ray \
         nnurphy/v2ray 
 
+img:
+    docker run \
+        -p 1080:1080 \
+        -d --restart=always \
+        --name gs \
+        nashv1/gs \
+        -cu "ss://${method}:${password}@${host}"
