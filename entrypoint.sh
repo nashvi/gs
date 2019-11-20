@@ -9,6 +9,8 @@ elif [[ $1 == "-cu" ]]; then
 elif [[ $1 == "-c" ]]; then
     /usr/local/bin/go-shadowsocks2 -c $2 \
         -verbose -socks :1080
+elif [[ $1 == "-s" ]]; then
+    /usr/local/bin/go-shadowsocks2 -s $2 -verbose
 else
     exec "$@"
 fi
